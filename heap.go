@@ -36,7 +36,7 @@ func (h *OrderedHeap[T]) Pop() any {
 }
 
 func (h OrderedHeap[T]) Top() any {
-	return h[len(h)-1]
+	return h[0]
 }
 
 type MinHeap[T constraints.Ordered] struct {
